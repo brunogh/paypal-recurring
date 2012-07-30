@@ -1,6 +1,7 @@
 module PayPal
   module Recurring
     class Request
+      
       METHODS = {
         :checkout       => "SetExpressCheckout",
         :payment        => "DoExpressCheckoutPayment",
@@ -89,6 +90,10 @@ module PayPal
         :trial_period          => "TRIALBILLINGPERIOD",
         :username              => "USER",
         :version               => "VERSION",
+        :logo                  => "HDRIMG",
+        :bg_color              => "HDRBACKCOLOR",
+        :border_color          => "HDRBORDERCOLOR",    
+        :payflow_color         => "PAYFLOWCOLOR",
         :landing_page          => "LANDINGPAGE"
       }
 
